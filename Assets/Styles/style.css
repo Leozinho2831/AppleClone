@@ -1,7 +1,29 @@
+@import 'styleFonts.css';
 
+@import 'header.css';
 
 :root{
+    --bgHeader: #030303;
+    --bgNav-links: #1e1e1f;
+    --menu: #ffffff;
 
+    --navLinks: #fbfbfb;
+    --linksHeader: #2997ff;
+
+    --titleHeader: #f5f5f7;
+    --subTitle-header: #717177;
+
+    --fontNav:'Sf Mono light';
+}
+
+@keyframes menuHeader{
+    0%{
+        height: 0;
+    }
+
+    100%{
+        height: 100vh;
+    }
 }
 
 *{
@@ -11,4 +33,14 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+}
+
+body{
+    max-height: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+@media (min-width: 840px){
+
 }
