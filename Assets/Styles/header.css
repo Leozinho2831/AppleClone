@@ -64,6 +64,10 @@
     display: none;
 }
 
+.openMenu .menu__button{
+    transform: translateY(12px);
+}
+
 .openMenu .mobile__links li > :not(.menu__button){
     display: none;
 }
@@ -71,13 +75,13 @@
 .openMenu .menu__button div:first-of-type{
     width: 23px;
 
-    transform: rotate(45deg) translate(1px, 1px);
+    transform: rotate(45deg);
 }
 
 .openMenu .menu__button div:last-of-type{
     width: 23px;
 
-    transform: rotate(-45deg) translate(5px, -5px);
+    transform: rotate(-45deg) translate(6px, -6px);
 }
 
 .openMenu .mobile__menu{
