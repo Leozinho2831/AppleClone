@@ -21,7 +21,7 @@
 
 .mobile__links{
     width: 100%;
-    padding: 15px;
+    padding: 20px;
 
     display: flex;
     align-items: center;
@@ -56,10 +56,51 @@
 
     border-radius: 1px;
     background-color: var(--menu);
+    
+    transition: 0.3s;
 }
 
 .mobile__menu{
     display: none;
+}
+
+.openMenu .mobile__links li > :not(.menu__button){
+    display: none;
+}
+
+.openMenu .menu__button div:first-of-type{
+    width: 23px;
+
+    transform: rotate(45deg) translate(1px, 1px);
+}
+
+.openMenu .menu__button div:last-of-type{
+    width: 23px;
+
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.openMenu .mobile__menu{
+    display: block;
+    height: 100vh;
+
+    animation: menuHeader 0.8s ease-in;
+}
+
+.openMenu .mobile__menu{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 50px;
+    gap: 15px;
+
+    font-family: var(--fontNav);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.openMenu .mobile__menu li{
+    opacity: 1;
+    animation: opacityLinks 0.8s ease-in;
 }
 
 @media (min-width: 840px){
