@@ -1,7 +1,13 @@
 const navBar = document.querySelector('.header__mobile');
 
 function menuVisible(){
-    navBar.classList.toggle('openMenu');
+
+    if(navBar.classList.contains('openInput')){
+        navBar.classList.remove('openInput');
+    } else {
+        navBar.classList.toggle('openMenu');
+    }
+    
 };
 
 function inputVisible(){
