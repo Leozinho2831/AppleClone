@@ -1,5 +1,5 @@
 .home__header{
-    font-family: var(--fontNav);
+    font-family: var(--fontHeader-nav);
 }
 
 .home__header nav ul a{
@@ -60,51 +60,102 @@
     transition: 0.3s;
 }
 
+/* input */
+
+.mobile__input{
+    display: none;
+}
+
+.openInput .mobile__input{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 25px 50px;
+    gap: 16px;
+    
+    font-family: var(--fontLinks-menu);
+    font-size: 1.6rem;
+    color: var(--navLinks);
+
+    animation: menuHeader 0.8s ease-in;
+}
+
+.openInput .mobile__input li:first-of-type{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 15px 0;
+}
+
+.openInput .mobile__input li:first-of-type input{
+    background-color: transparent;
+    padding: 5px;
+    margin: 0 0 0 10px;
+
+    font-family: var(--fontInput-header);
+    font-size: 2rem;
+    color: var(--subTitle-header);
+}
+
+.openInput .mobile__input li a:hover{
+    color: var(--navLinks-hover);
+}
+
+.openInput .mobile__input li:first-of-type input:focus{
+    outline: none;
+}
+
+/* menu */
+
 .mobile__menu{
     display: none;
 }
 
-.openMenu .menu__button{
+.openMenu .menu__button,
+.openInput .menu__button{
     transform: translateY(12px);
 }
 
-.openMenu .mobile__links li > :not(.menu__button){
+.openMenu .mobile__links li > :not(.menu__button),
+.openInput .mobile__links li > :not(.menu__button){
     display: none;
 }
 
-.openMenu .menu__button div:first-of-type{
+.openMenu .menu__button div:first-of-type,
+.openInput .menu__button div:first-of-type{
     width: 23px;
 
     transform: rotate(45deg);
 }
 
-.openMenu .menu__button div:last-of-type{
+.openMenu .menu__button div:last-of-type,
+.openInput .menu__button div:last-of-type{
     width: 23px;
 
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
 .openMenu .mobile__menu{
-    display: block;
     height: 100vh;
-
-    animation: menuHeader 0.8s ease-in;
-}
-
-.openMenu .mobile__menu{
     display: flex;
     flex-direction: column;
     padding: 25px 50px;
     gap: 15px;
 
-    font-family: var(--fontNav);
+    font-family: var(--fontLinks-menu);
     font-size: 1.6rem;
-    font-weight: 600;
+    color: var(--navLinks);
+
+    animation: menuHeader 0.8s ease-in;
 }
 
 .openMenu .mobile__menu li{
     opacity: 1;
     animation: opacityLinks 0.8s ease-in;
+}
+
+.openMenu .mobile__menu li a:hover{
+    color: var(--navLinks-hover);
 }
 
 @media (min-width: 840px){
