@@ -2,3 +2,23 @@
     font-family: 'Sf Mono light';
     src: url(../Fonts/SFMonoLight.otf);
 }
+
+@font-face {
+    font-family: 'Sf Mono Semi-Bold';
+    src: url(../Fonts/SFMonoSemibold.otf);
+}
+
+@font-face {
+    font-family: 'Sf Pro Display';
+    src: url(../Fonts/SFPRODISPLAYBOLD.OTF);
+}
+
+@font-face {
+    font-family: 'Sf Pro Text Heavy';
+    src: url(../Fonts/SF-Pro-Text-Heavy.otf);
+}
+
+@font-face {
+    font-family: 'Sf Pro Text Semi-Bold';
+    src: url(../Fonts/SF-Pro-Text-Semibold.otf);
+}
