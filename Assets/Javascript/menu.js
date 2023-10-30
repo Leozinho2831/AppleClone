@@ -1,15 +1,20 @@
-const navBar = document.querySelector('.header__mobile');
+const navBarMobile = document.querySelector('.header__mobile');
+const navBarScreen = document.querySelector('.home__header');
 
 function menuVisible(){
 
-    if(navBar.classList.contains('openInput')){
-        navBar.classList.remove('openInput');
+    if(navBarMobile.classList.contains('openInputMobile')){
+        navBarMobile.classList.remove('openInputMobile');
     } else {
-        navBar.classList.toggle('openMenu');
+        navBarMobile.classList.toggle('openMenu');
     }
     
 };
 
-function inputVisible(){
-    navBar.classList.toggle('openInput');
+function inputVisibleMobile(){
+    navBarMobile.classList.toggle('openInputMobile');
+};
+
+function inputVisibleScreen(){
+    navBarScreen.classList.toggle('openInputScreen');
 };
