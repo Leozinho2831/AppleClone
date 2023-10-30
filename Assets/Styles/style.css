@@ -8,12 +8,17 @@
     --menu: #ffffff;
 
     --navLinks: #fbfbfb;
+    --navLinks-hover: #b4b4b4;
     --linksHeader: #2997ff;
 
     --titleHeader: #f5f5f7;
     --subTitle-header: #717177;
 
-    --fontNav:'Sf Mono light';
+    --fontHeader-nav: 'Sf Mono light';
+    --fontInput-header: 'Sf Mono Semi-Bold';
+
+    --fontHeader-title: 'Sf Pro Display';
+    --fontLinks-menu: 'Sf Pro Text Semi-Bold';
 }
 
 @keyframes menuHeader{
