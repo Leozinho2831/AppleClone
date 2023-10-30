@@ -71,10 +71,10 @@
     flex-direction: column;
     height: 100vh;
     padding: 25px 50px;
-    gap: 16px;
+    gap: 18px;
     
     font-family: var(--fontLinks-menu);
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     color: var(--navLinks);
 
     animation: menuHeader 0.8s ease-in;
@@ -87,14 +87,7 @@
 .openInput .mobile__input li:first-of-type{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     margin: 0 0 15px 0;
-}
-
-.openInput .mobile__input li:nth-of-type(2){
-    font-family: var(--fontInput-header);
-    font-size: 1.4rem;
-    color: var(--subTitle-header);
 }
 
 .openInput .mobile__input li:first-of-type img{
@@ -114,6 +107,12 @@
     color: var(--subTitle-header);
 
     cursor: pointer;
+}
+
+.openInput .mobile__input li:nth-of-type(2){
+    font-family: var(--fontInput-header);
+    font-size: 1.4rem;
+    color: var(--subTitle-header);
 }
 
 .openInput .mobile__input li:first-of-type input:focus{
@@ -155,9 +154,10 @@
 }
 
 .openMenu .mobile__menu{
-    height: 100vh;
     display: flex;
     flex-direction: column;
+    
+    height: 100vh;
     padding: 25px 50px;
     gap: 15px;
 
