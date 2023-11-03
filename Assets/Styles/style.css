@@ -13,12 +13,6 @@
 
     --titleHeader: #f5f5f7;
     --subTitle-header: #717177;
-
-    --fontHeader-nav: 'Sf Mono light';
-    --fontInput-header: 'Sf Mono Semi-Bold';
-
-    --fontHeader-title: 'Sf Pro Display';
-    --fontLinks-menu: 'Sf Pro Text Semi-Bold';
 }
 
 @keyframes menuHeader{
@@ -54,8 +48,4 @@ body{
     max-height: 100%;
     min-height: 100vh;
     overflow-x: hidden;
-}
-
-@media (min-width: 840px){
-
 }
