@@ -2,21 +2,16 @@
     font-family: var(--fontHeader-nav);
 }
 
-.home__header nav ul a{
-    color: var(--navLinks);
-}
-
-.header__links{
+.header__screen{
     display: none;
 }
 
-.header__mobile,
-.header__links{
+.header__mobile{
     background-color: var(--bgNav-links);
 }
 
-.header__mobile{
-    display: block;
+.header__mobile a{
+    color: var(--navLinks);
 }
 
 .mobile__links{
@@ -77,11 +72,11 @@
     font-size: 1.25rem;
     color: var(--navLinks);
 
-    animation: menuHeader 0.8s ease-in;
+    animation: menuHeader 0.4s ease-in;
 }
 
 .openInputMobile .mobile__input li{
-    animation: opacityLinks 0.8s ease-in;
+    animation: opacityLinks 0.4s ease-in;
 }
 
 .openInputMobile .mobile__input li:first-of-type{
@@ -174,12 +169,12 @@
     font-size: 1.6rem;
     color: var(--navLinks);
 
-    animation: menuHeader 0.8s ease-in;
+    animation: menuHeader 0.4s ease-in;
 }
 
 .openMenu .mobile__menu li{
     opacity: 1;
-    animation: opacityLinks 0.8s ease-in;
+    animation: opacityLinks 0.4s ease-in;
 }
 
 .openMenu .mobile__menu li a:hover{
@@ -187,8 +182,17 @@
 }
 
 @media (min-width: 840px){
-    .header__links{
+    .header__mobile{
+        display: none;
+    }
+
+    .header__screen{
         display: block;
+        background-color: var(--bgNav-links);
+    }
+
+    .header__screen a{
+        color: var(--navLinks);
     }
 
     .links__options{
@@ -201,19 +205,17 @@
 
         max-width: 840px;
 
-        font-size: 0.7rem;
+        font-size: 0.75rem;
         color: var(--navLinks);
-    }
 
-    .links__options li{
         cursor: pointer;
     }
 
-    .links__options li:hover{
-        color: var(--navLinks-hover);
+    .links__options li a{
+        color: var(--navLinks);
     }
 
-    .header__mobile{
-        display: none;
+    .links__options li a:hover{
+        color: var(--navLinks-hover);
     }
 }
