@@ -22,3 +22,11 @@
     font-family: 'Sf Pro Text Semi-Bold';
     src: url(../Fonts/SF-Pro-Text-Semibold.otf);
 }
+
+:root{
+    --fontHeader-nav: 'Sf Mono light';
+    --fontInput-header: 'Sf Mono Semi-Bold';
+
+    --fontHeader-title: 'Sf Pro Display';
+    --fontLinks-menu: 'Sf Pro Text Semi-Bold';
+}
