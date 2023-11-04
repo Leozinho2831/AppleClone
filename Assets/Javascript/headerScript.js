@@ -1,5 +1,4 @@
 const navBarMobile = document.querySelector('.header__mobile');
-const navBarScreen = document.querySelector('.home__header');
 
 function menuVisible(){
 
@@ -14,6 +13,10 @@ function menuVisible(){
 function inputVisibleMobile(){
     navBarMobile.classList.toggle('openInputMobile');
 };
+
+// screen
+
+const navBarScreen = document.querySelector('.header__screen');
 
 function inputVisibleScreen(){
     navBarScreen.classList.toggle('openInputScreen');
