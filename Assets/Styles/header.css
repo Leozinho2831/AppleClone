@@ -63,13 +63,15 @@
     display: none;
 }
 
+.header__mobile.openInputMobile{
+    box-shadow: 1px 1px 2px var(--shadowHeader);
+}
+
 .header__mobile.openInputMobile .mobile__input{
     display: flex;
     flex-direction: column;
     height: 100%;
-    min-height: 100vh;
-    max-height: 100%;
-    padding: 25px 50px;
+    padding: 25px 50px 50px 50px;
     gap: 18px;
     
     font-family: var(--fontLinks-menu);
@@ -165,14 +167,16 @@
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
+.header__mobile.openMenu{
+    box-shadow: 1px 1px 2px var(--shadowHeader);
+}
+
 .header__mobile.openMenu .mobile__menu{
     display: flex;
     flex-direction: column;
     
     height: 100%;
-    min-height: 100vh;
-    max-height: 100%;
-    padding: 25px 50px;
+    padding: 10px 50px 50px 50px;
     gap: 15px;
 
     font-family: var(--fontLinks-menu);
