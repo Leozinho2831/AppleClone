@@ -12,6 +12,8 @@
 
 .main__introduction{
     background-color: var(--background);
+
+    overflow-x: hidden;
 }
 
 .introduction__content-title{
