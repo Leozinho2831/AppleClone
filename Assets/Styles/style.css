@@ -1,53 +1,41 @@
-@import 'styleFonts.css';
-
 @import 'header.css';
+@import 'main__introduction.css';
 
-:root{
-    --bgHeader: #030303;
-    --bgNav-links: #1e1e1f;
-    --menu: #ffffff;
 
-    --navLinks: #fbfbfb;
-    --navLinks-hover: #b4b4b4;
-    --linksHeader: #2997ff;
+/* Sf Mono */
 
-    --titleHeader: #f5f5f7;
-    --subTitle-header: #717177;
-
-    --setaInput-links: #f8f8f8;
-    --setaInput-linksHover: #b1b1b1;
-
-    --shadowHeader: rgba(0, 0, 0, 4);
+@font-face {
+    font-family: 'Sf Mono light';
+    src: url(../Fonts/SFMonoLight.otf);
 }
 
-@keyframes menuHeader{
-    0%{
-        height: 0;
-    }
-
-    100%{
-        height: 100vh;
-    }
+@font-face {
+    font-family: 'Sf Mono Semi-Bold';
+    src: url(../Fonts/SFMonoSemibold.otf);
 }
 
-@keyframes serchHeader-screen{
-    0%{
-        height: 0;
-    }
+/* Sf Pro Display */
 
-    100%{
-        height: 400px;
-    }
+@font-face {
+    font-family: 'Sf Pro Display Regular';
+    src: url(../Fonts/SFPRODISPLAYREGULAR.OTF);
 }
 
-@keyframes opacityLinks{
-    0%{
-        opacity: 0;
-    }
+@font-face {
+    font-family: 'Sf Pro Display Bold';
+    src: url(../Fonts/SFPRODISPLAYBOLD.OTF);
+}
 
-    100%{
-        opacity: 1;
-    }
+/* Sf Pro Text */
+
+@font-face {
+    font-family: 'Sf Pro Text Heavy';
+    src: url(../Fonts/SF-Pro-Text-Heavy.otf);
+}
+
+@font-face {
+    font-family: 'Sf Pro Text Semi-Bold';
+    src: url(../Fonts/SF-Pro-Text-Semibold.otf);
 }
 
 *{
@@ -62,5 +50,6 @@
 body{
     max-height: 100%;
     min-height: 100vh;
+    
     overflow-x: hidden;
 }
