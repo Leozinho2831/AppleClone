@@ -28,7 +28,7 @@
 
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 20%);
+    transform: translate(-50%, 35%);
 
     z-index: 1;
 }
@@ -77,6 +77,10 @@
 }
 
 @media (min-width: 840px){
+
+    .introduction__content-title{
+        transform: translate(-50%, 20%);
+    }
 
     .main__introduction h1{
         font-size: 3rem;
