@@ -1,0 +1,92 @@
+:root{
+    --background: #030303;
+
+    --color-title: #F5F5F7;
+    --color-subTitle: #6E6E73;
+    --color-links: #2997FF;
+    --color-linksVisited: #800080;
+
+    --fontTitle: 'Sf Pro Display Bold';
+    --fontSub-title: 'Sf Pro Display Regular';
+}
+
+.main__introduction{
+    background-color: var(--background);
+}
+
+.introduction__content-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 30px 40px;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 20%);
+
+    z-index: 1;
+}
+
+.main__introduction h1{
+    color: var(--color-title);
+    
+    font-family: var(--fontTitle);
+    font-weight: bold;
+    font-size: 2.4rem;
+
+    text-align: center;
+}
+
+.main__introduction h2{
+    font-family: var(--fontSub-title);
+    font-weight: 500;
+    font-size: 1.3rem;
+
+    color: var(--color-subTitle);
+
+    text-align: center;
+}
+
+.main__introduction h2 small{
+    font-size: 0.9rem;
+}
+
+.main__introduction a{
+    font-family: var(--fontSub-title);
+    font-size: 1rem;
+
+    color: var(--color-links);
+}
+
+.main__introduction a:visited{
+    color: var(--color-linksVisited);
+}
+
+.introduction__apple-itens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+@media (min-width: 840px){
+
+    .main__introduction h1{
+        font-size: 3rem;
+    }
+
+    .main__introduction h2{
+        font-size: 1.5rem;
+    }
+
+    .main__introduction h2 small{
+        font-size: 1.2rem;
+    }
+}
