@@ -1,0 +1,66 @@
+:root{
+    --colorText: #1D1D1F;
+    --colorLink: #06C;
+
+    --fontTitle: 'Sf Pro Display Bold';
+    --fontText: 'Sf Pro Display Regular';
+}
+
+.announcement__iphone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow-x: hidden;
+}
+
+.announcement__iphone img{
+    width: 100%;
+    min-width: 100vw;
+}
+
+.announcement__infos{
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    color: var(--colorText);
+
+    transform: translate(-50%, 100%);
+    z-index: 1;
+}
+
+.announcement__infos h1{
+    font-family: var(--fontTitle);
+    font-size: 3rem;
+
+    text-align: center
+}
+
+.announcement__infos p{
+    font-family: var(--fontText);
+    font-size: 1.6rem;
+
+    text-align: center
+}
+
+.announcement__infos div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.announcement__infos div a{
+    width: 95px;
+
+    font-family: var(--fontText);
+    font-size: 1.2rem;
+    color: var(--colorLink);
+
+    text-align: center
+}
+
