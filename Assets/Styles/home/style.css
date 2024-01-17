@@ -4,41 +4,40 @@
 @import 'main__spirite.css';
 @import 'main__announcement.css';
 
-
 /* Sf Mono */
 
 @font-face {
     font-family: 'Sf Mono light';
-    src: url(../Fonts/SFMonoLight.otf);
+    src: url(../../Fonts/SFMonoLight.otf);
 }
 
 @font-face {
     font-family: 'Sf Mono Semi-Bold';
-    src: url(../Fonts/SFMonoSemibold.otf);
+    src: url(../../Fonts/SFMonoSemibold.otf);
 }
 
 /* Sf Pro Display */
 
 @font-face {
     font-family: 'Sf Pro Display Regular';
-    src: url(../Fonts/SFPRODISPLAYREGULAR.OTF);
+    src: url(../../Fonts/SFPRODISPLAYREGULAR.OTF);
 }
 
 @font-face {
     font-family: 'Sf Pro Display Bold';
-    src: url(../Fonts/SFPRODISPLAYBOLD.OTF);
+    src: url(../../Fonts/SFPRODISPLAYBOLD.OTF);
 }
 
 /* Sf Pro Text */
 
 @font-face {
     font-family: 'Sf Pro Text Heavy';
-    src: url(../Fonts/SF-Pro-Text-Heavy.otf);
+    src: url(../../Fonts/SF-Pro-Text-Heavy.otf);
 }
 
 @font-face {
     font-family: 'Sf Pro Text Semi-Bold';
-    src: url(../Fonts/SF-Pro-Text-Semibold.otf);
+    src: url(../../Fonts/SF-Pro-Text-Semibold.otf);
 }
 
 *{
