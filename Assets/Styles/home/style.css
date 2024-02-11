@@ -40,6 +40,11 @@
     src: url(../../Fonts/SF-Pro-Text-Semibold.otf);
 }
 
+@font-face {
+    font-family: 'Sf Pro Text Regular';
+    src: url(../../Fonts/SF-Pro-Text-Regular.otf);
+}
+
 *{
     margin: 0;
     padding: 0;
