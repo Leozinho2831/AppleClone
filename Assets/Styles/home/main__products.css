@@ -1,3 +1,8 @@
 :root{
-    
+    --colorTitle: #F5F5F7;
+    --colorLink: #06C;
+
+    --fontTitle: 'Sf Pro Display Bold';
+    --fontText: 'Sf Pro Display Regular';
+    --fontLink: 'Sf Pro Text Regular'
 }
