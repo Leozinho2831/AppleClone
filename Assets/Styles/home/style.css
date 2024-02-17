@@ -20,13 +20,18 @@
 /* Sf Pro Display */
 
 @font-face {
-    font-family: 'Sf Pro Display Regular';
-    src: url(../../Fonts/SFPRODISPLAYREGULAR.OTF);
+    font-family: 'Sf Pro Display Bold';
+    src: url(../../Fonts/SFPRODISPLAYBOLD.OTF);
 }
 
 @font-face {
-    font-family: 'Sf Pro Display Bold';
-    src: url(../../Fonts/SFPRODISPLAYBOLD.OTF);
+    font-family: 'Sf Pro Display Medium';
+    src: url(../../Fonts/SFPRODISPLAYMEDIUM.OTF);
+}
+
+@font-face {
+    font-family: 'Sf Pro Display Regular';
+    src: url(../../Fonts/SFPRODISPLAYREGULAR.OTF);
 }
 
 /* Sf Pro Text */
