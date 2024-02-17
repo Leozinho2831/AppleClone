@@ -1,6 +1,10 @@
 :root{
-    --colorTitle: #F5F5F7;
+    --colorTitle-white: #F5F5F7;
+    --colorTitle-black: #1D1D1F;
     --colorLink: #06C;
+
+    --colorLogo-AppleWatch: ;
+    --colorLogo-Watch: #fd8d37;
 
     --fontTitle: 'Sf Pro Display Bold';
     --fontText: 'Sf Pro Display Regular';
@@ -46,17 +50,6 @@
     text-align: center;
 }
 
-.products__titlesIphone{
-    color: var(--colorTitle);
-}
-
-.products__titlesIphone h1{
-    font-family: var(--fontTitle);
-}
-
-.products__titlesIphone p{
-    font-family: var(--fontText);
-}
 
 .products__links{
     display: flex;
@@ -68,7 +61,86 @@
     font-family: var(--fontLink);
 }
 
-@media (min-width:950px){
+.products__titlesIphone{
+    color: var(--colorTitle-white);
+}
+
+.products__titlesIphone h1{
+    font-family: var(--fontTitle);
+}
+
+.products__titlesIphone p{
+    font-family: var(--fontText);
+}
+
+.products__titlesIpad{
+    color: var(--colorTitle-black);
+}
+
+.products__titlesIpad h1{
+    font-family: var(--fontTitle);
+}
+
+.products__titlesIpad p{
+    font-family: var(--fontText);
+}
+
+.products__titlesAirpods{
+    color: var(--colorTitle-black);
+}
+
+.products__titlesAirpods h1{
+    font-family: var(--fontTitle);
+}
+
+.products__titlesAirpods p{
+    font-family: var(--fontText);
+}
+
+.products__titlesAirpods a{
+    color: var(--colorLink);
+    font-family: var(--fontLink);
+}
+
+.products__titlesAppleWatch{
+    
+}
+
+.products__titlesWatch{
+    gap: 0;
+}
+
+.products__titlesWatch figure{
+    display: flex;
+
+    color: var(--colorTitle-black);
+}
+
+.products__titlesWatch figure img{
+    width: 1.8rem;
+    height: 1.8rem;
+    margin: 0 0 17px 0;
+}
+
+.products__titlesWatch figure h1{
+    font-family: var(--fontTitle);
+}
+
+.products__titlesWatch figure p{
+    color: var(--colorLogo-Watch);
+    font-family: var(--fontTitle);
+    font-size: 0.675rem;
+}
+
+.products__titlesWatch figure ~ p{
+    font-family: var(--fontText);
+}
+
+.products__titlesWatch .products__links{
+    line-height: 35px;
+}
+
+@media (min-width:1200px){
 
     .main__products{
         display: grid;
@@ -77,7 +149,6 @@
 
     .main__products figure a img{
         width: 100%;
-        max-height: 570px;
         min-width: 0;
         min-height: 0;
     }
