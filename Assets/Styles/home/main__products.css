@@ -77,7 +77,6 @@
 
     .main__products figure a img{
         width: 100%;
-        max-width: 780px;
         max-height: 570px;
         min-width: 0;
         min-height: 0;
