@@ -14,16 +14,22 @@
     justify-content: center;
     gap: 10px;
 
-    margin: 5px;
+    margin: 8px;
+
+    overflow-x: hidden;
 }
 
 .main__products figure{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 
     position: relative;
+}
+
+.main__products figure a img{
+    min-width: 740px;
+    min-height: 570px;
 }
 
 .products__titles{
@@ -60,4 +66,20 @@
 .products__links a{
     color: var(--colorLink);
     font-family: var(--fontLink);
+}
+
+@media (min-width:950px){
+
+    .main__products{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main__products figure a img{
+        width: 100%;
+        max-width: 780px;
+        max-height: 570px;
+        min-width: 0;
+        min-height: 0;
+    }
 }
