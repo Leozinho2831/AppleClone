@@ -3,7 +3,7 @@
     --colorTitle-black: #1D1D1F;
     --colorLink: #06C;
 
-    --colorLogo-AppleWatch: ;
+    --colorLogo-AppleWatch: #B71D23;
     --colorLogo-Watch: #fd8d37;
 
     --fontTitle: 'Sf Pro Display Bold';
@@ -16,7 +16,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
 
     margin: 8px;
 
@@ -102,42 +102,90 @@
     font-family: var(--fontLink);
 }
 
-.products__titlesAppleWatch{
-    
+.products__titlesApple-watch figure,
+.products__titlesWatch figure{
+    display: flex;
+}
+
+.products__titlesApple-watch figure img ~ div,
+.products__titlesWatch figure img ~ div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+}
+
+.products__titlesApple-watch{
+    color: var(--colorTitle-white);
 }
 
 .products__titlesWatch{
-    gap: 0;
-}
-
-.products__titlesWatch figure{
-    display: flex;
-
     color: var(--colorTitle-black);
 }
 
+.products__titlesApple-watch figure img,
 .products__titlesWatch figure img{
     width: 1.8rem;
     height: 1.8rem;
-    margin: 0 0 17px 0;
+    margin: 0 1px 18px 0;
+}
+
+.products__titlesApple-watch figure h1{
+    font-family: var(--fontTitle);
+    font-size: 1.8rem;
+}
+
+.products__titlesApple-watch figure p{
+    color: var(--colorLogo-AppleWatch);
+    font-family: var(--fontTitle);
+    font-size: 0.825rem;
+
+    margin: 0 0 0 5px;
 }
 
 .products__titlesWatch figure h1{
     font-family: var(--fontTitle);
+    font-size: 1.8rem;
 }
 
 .products__titlesWatch figure p{
     color: var(--colorLogo-Watch);
     font-family: var(--fontTitle);
-    font-size: 0.675rem;
+    font-size: 0.825rem;
+
+    margin: 0 0 0 14px;
+}
+
+.products__titlesApple-watch figure ~ p{
+    font-family: var(--fontText);
+    font-size: 1.2rem;
 }
 
 .products__titlesWatch figure ~ p{
     font-family: var(--fontText);
+    font-size: 1.32rem;
 }
 
-.products__titlesWatch .products__links{
-    line-height: 35px;
+.products__titlesApple-watch .products__links,
+.products__titlesWatch .products__links,
+.products__titlesCard .products__links{
+    line-height: 32px;
+}
+
+.products__titlesCard figure img{
+    width: 1.8rem;
+    height: 1.8rem;
+    margin: 0 1px 5px 0;
+}
+
+.products__titlesCard figure h1{
+    font-family: var(--fontTitle);
+    font-size: 1.8rem;
+}
+
+.products__titlesCard figure ~ p{
+    font-family: var(--fontText);
+    font-size: 1.3rem;
 }
 
 @media (min-width:1200px){
