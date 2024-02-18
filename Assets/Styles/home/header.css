@@ -103,7 +103,7 @@
 
 .menu__button div{
     width: 18px;
-    height: 1.5px;
+    height: 2px;
 
     border-radius: 1px;
     background-color: var(--menu);
