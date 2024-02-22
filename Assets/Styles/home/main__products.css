@@ -59,6 +59,7 @@
 .products__links a{
     color: var(--colorLink);
     font-family: var(--fontLink);
+    font-size: 1rem;
 }
 
 .products__titlesIphone{
@@ -67,10 +68,12 @@
 
 .products__titlesIphone h1{
     font-family: var(--fontTitle);
+    font-size: 1.8rem;
 }
 
 .products__titlesIphone p{
     font-family: var(--fontText);
+    font-size: 1.3rem;
 }
 
 .products__titlesIpad{
@@ -79,10 +82,12 @@
 
 .products__titlesIpad h1{
     font-family: var(--fontTitle);
+    font-size: 1.8rem;
 }
 
 .products__titlesIpad p{
     font-family: var(--fontText);
+    font-size: 1.3rem;
 }
 
 .products__titlesAirpods{
@@ -91,15 +96,18 @@
 
 .products__titlesAirpods h1{
     font-family: var(--fontTitle);
+    font-size: 1.8rem;
 }
 
 .products__titlesAirpods p{
     font-family: var(--fontText);
+    font-size: 1.3rem;
 }
 
 .products__titlesAirpods a{
     color: var(--colorLink);
     font-family: var(--fontLink);
+    font-size: 1rem;
 }
 
 .products__titlesApple-watch figure,
@@ -153,12 +161,12 @@
     font-family: var(--fontTitle);
     font-size: 0.825rem;
 
-    margin: 0 0 0 14px;
+    margin: 0 0 0 20px;
 }
 
 .products__titlesApple-watch figure ~ p{
     font-family: var(--fontText);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .products__titlesWatch figure ~ p{
@@ -195,9 +203,82 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .products__titlesIphone p{
+        font-size: 1rem;
+    }
+
     .main__products figure a img{
         width: 100%;
         min-width: 0;
         min-height: 0;
+    }
+}
+
+@media (min-width:1700px){
+
+    /* variação de tamanhos de fontes */
+
+    .products__links a{
+        font-size: 1.2rem;
+    }
+
+    .products__titlesIphone h1{
+        font-size: 1.925rem;
+    }
+
+    .products__titlesIphone p{
+        font-size: 1.1rem;
+    }
+
+    .products__titlesIpad h1{
+        font-size: 2rem;
+    }
+
+    .products__titlesIpad p{
+        font-size: 1.4rem;
+    }
+
+    .products__titlesAirpods h1{
+        font-size: 2rem;
+    }
+
+    .products__titlesAirpods p{
+        font-size: 1.4rem;
+    }
+
+    .products__titlesAirpods a{
+        font-size: 1.2rem;
+    }
+
+    .products__titlesApple-watch figure h1{
+        font-size: 2rem;
+    }
+
+    .products__titlesApple-watch figure p{
+        font-size: 1.1rem;
+    }
+
+    .products__titlesWatch figure h1{
+        font-size: 2rem;
+    }
+
+    .products__titlesWatch figure p{
+        font-size: 1.1rem;
+    }
+
+    .products__titlesApple-watch figure ~ p{
+        font-size: 1.4rem;
+    }
+
+    .products__titlesWatch figure ~ p{
+        font-size: 1.4rem;
+    }
+
+    .products__titlesCard figure h1{
+        font-size: 2rem;
+    }
+
+    .products__titlesCard figure ~ p{
+        font-size: 1.4rem;
     }
 }
