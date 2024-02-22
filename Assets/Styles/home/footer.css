@@ -1,0 +1,39 @@
+:root{
+    --background: #F5F5F7;
+    --color-text: #6E6E73;
+    --color-links: #424245;
+
+    --font-text: 'Sf Pro Text Regular';
+}
+
+.home__footer{
+    background-color: var(--background);
+}
+
+.footer__infos{
+    display: grid;
+    gap: 20px;
+
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 15px;
+
+    font-family: var(--font-text);
+    font-size: 0.825rem;
+}
+
+.footer__infos p{
+    color: var(--color-text);
+}
+
+.footer__infos p a,
+.footer_-infos p span{
+    color: var(--color-links);
+}
+
+@media (min-width: 1800px){
+    .footer__infos{
+        max-width: 1400px;
+        font-size: 0.95rem;
+    }
+}
