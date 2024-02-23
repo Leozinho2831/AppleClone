@@ -1,8 +1,14 @@
 :root{
     --background: #F5F5F7;
+
+    --color-title: #1D1D1F;
     --color-text: #6E6E73;
     --color-links: #424245;
+    --color-endLinks: #0066CC;
 
+    --border: #D2D2D7;
+
+    --font-title: 'Sf Pro Text Semi-Bold';
     --font-text: 'Sf Pro Text Regular';
 }
 
@@ -10,13 +16,15 @@
     background-color: var(--background);
 }
 
-.footer__infos{
-    display: grid;
-    gap: 20px;
-
+.footer__organization{
     max-width: 1024px;
     margin: 0 auto;
     padding: 15px;
+}
+
+.footer__infos{
+    display: grid;
+    gap: 20px;
 
     font-family: var(--font-text);
     font-size: 0.825rem;
@@ -31,9 +39,83 @@
     color: var(--color-links);
 }
 
+.footer__directory{
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.directory__organization{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.footer__directory ul{
+    display: grid;
+    gap: 25px;
+}
+
+.footer__directory ul div{
+    display: grid;
+    gap: 10px;
+}
+
+.footer__directory ul .directory__titles{
+    color: var(--color-title);
+    font-family: var(--font-title);
+    font-size: 1rem;
+}
+
+.footer__directory ul li a{
+    color: var(--color-links);
+    font-family: var(--font-text);
+    font-size: 0.9rem;
+}
+
+.footer__directory p{
+    color: var(--color-text);
+    font-family: var(--font-text);
+    font-size: 0.825rem;
+}
+
+.footer__directory p a{
+    color: var(--color-endLinks);
+    font-size: 0.825rem;
+}
+
+@media(min-width: 525px){
+    .directory__organization{
+        justify-content: center;
+    }
+}
+
+@media (min-width:950px){
+    .directory__organization{
+        justify-content: space-between;
+    }
+}
+
 @media (min-width: 1800px){
-    .footer__infos{
+    .footer__organization{
         max-width: 1400px;
+    }
+
+    .footer__infos{
         font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 320px){
+    .directory__organization{
+        justify-content: center;
+    }
+
+    .directory__organization ul div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
