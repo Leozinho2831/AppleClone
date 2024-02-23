@@ -1,7 +1,7 @@
 :root{
-    --background: #F5F5F7;
+    --background-footer: #F5F5F7;
 
-    --color-title: #1D1D1F;
+    --color-titleFooter: #1D1D1F;
     --color-text: #6E6E73;
     --color-links: #424245;
     --color-endLinks: #0066CC;
@@ -13,7 +13,7 @@
 }
 
 .home__footer{
-    background-color: var(--background);
+    background-color: var(--background-footer);
 }
 
 .footer__organization{
@@ -64,7 +64,7 @@
 }
 
 .footer__directory ul .directory__titles{
-    color: var(--color-title);
+    color: var(--color-titleFooter);
     font-family: var(--font-title);
     font-size: 1rem;
 }
