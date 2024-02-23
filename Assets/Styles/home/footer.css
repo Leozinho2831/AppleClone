@@ -86,6 +86,36 @@
     font-size: 0.825rem;
 }
 
+.footer__privacy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.footer__privacy p{
+    color: var(--color-text);
+    font-family: var(--font-text);
+    font-size: 0.825rem;
+}
+
+.footer__privacy div{
+    display: flex;
+    align-items: center;
+}
+
+.footer__privacy div a{
+    font-size: 0.825rem;
+    font-family: var(--font-text);
+    color: var(--color-links);
+    padding: 0 5px 0 10px;
+}
+
+.footer__privacy div a + a{
+    border-left: 1px solid var(--border);
+}
+
 @media(min-width: 525px){
     .directory__organization{
         justify-content: center;
